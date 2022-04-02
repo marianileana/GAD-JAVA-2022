@@ -9,7 +9,6 @@ public class Bicycle {
         this.size = size;
         this.name = name;
         nrOfBicycles++;
-
     }
 
     public static int getNrOfBicycles() {
