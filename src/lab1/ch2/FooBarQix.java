@@ -7,15 +7,19 @@ public class FooBarQix {
         if (i % 5 == 0) s += "Bar";
         if (i % 7 == 0) s += "Qix";
 
-        int digit, nr;
+        int nr, l = 0;
+        int[] digits = new int[100];
         nr = i;
         while(nr>0){
-            digit = nr % 10;
+            digits[l] = nr % 10;
             nr = nr / 10;
+            l++;
+        }
 
-            if (digit == 3) s += "Foo";
-            else if (digit == 5) s += "Bar";
-            else if (digit == 7) s += "Qix";
+        for (int j = 0; j <= l; j++) {
+            if (digits[j] == 3) s += "Foo";
+            else if (digits[j] == 5) s += "Bar";
+            else if (digits[j] == 7) s += "Qix";
         }
 
         if (!s.isEmpty())
@@ -25,7 +29,7 @@ public class FooBarQix {
 
     public static void main(String[] args) {
 
-        System.out.println(compute(33));
+        System.out.println(compute(5));
 
     }
 }
