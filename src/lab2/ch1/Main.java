@@ -10,6 +10,5 @@ public class Main {
         Fighter winner = bm.fight();
         System.out.print("Winner = " + winner.getName());
 
-
     }
 }
