@@ -23,8 +23,6 @@ public class FooBarQix {
         else return String.valueOf(i);
     }
 
-
-
     public static void main(String[] args) {
 
         System.out.println(compute(33));
