@@ -22,4 +22,11 @@ public class BoxingMatch {
 
         return fighter2;
     }
+
+    public Fighter fight(int i, float j) {
+        return fighter2;
+    }
+    public Fighter fight(float i, int j) {
+        return fighter2;
+    }
 }

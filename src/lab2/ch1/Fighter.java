@@ -2,17 +2,16 @@ package lab2.ch1;
 
 public class Fighter {
     private String name;
-    private int health = 100;
+    private int health;
     private int damagePerAttack;
 
-
-    public Fighter(int health, int damage, String name){
+    public Fighter(int health, int damage, String name) {
         this.health = health;
         this.damagePerAttack = damage;
         this.name = name;
     }
 
-    public void attack(Fighter fighter){
+    public void attack( Fighter fighter){
         fighter.health = fighter.health - this.damagePerAttack;
     }
 

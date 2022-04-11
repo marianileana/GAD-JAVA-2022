@@ -18,4 +18,5 @@ public class Bicycle {
     public String toString(){
         return "Bicycle named " + name + " of sieze " + size;
     }
+
 }
