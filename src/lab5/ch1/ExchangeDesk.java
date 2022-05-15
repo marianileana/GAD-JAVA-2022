@@ -9,7 +9,7 @@ public class ExchangeDesk<F extends Currency, T extends Currency> {
         T toReturn = null;
 
         int value = from.getValue() * rate; //rate[1][3]
-        toReturn = toClass.getDeclaredConstructor(Integer.class).newInstance(value);
+        //toReturn = toClass.getDeclaredConstructor(Integer.class).newInstance(value);
 
         return toReturn;
     }

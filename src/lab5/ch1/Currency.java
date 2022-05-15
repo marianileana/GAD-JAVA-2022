@@ -1,6 +1,6 @@
 package lab5.ch1;
 
-public class Currency {
+public abstract class Currency {
     private int value;
 
     public Currency(int value) {
